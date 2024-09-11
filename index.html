@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+    
+    <form align="center" action="login.html" method="get">
+        <h1>Sign Up</h1>
+        <label for="fname">First Name *</label>
+        <input type="text" id="fname" name="fname" required><br><br>
+        <label for="lname">Last Name *</label>
+        <input type="text" id="lname" name="lname" required><br><br>
+        <label for="email">Email *</label>
+        <input type="text" id="email" name="email" required  pattern="[a-z0-9._]+@[a-z]+\.[a-z]+" title="please enter correct email"><br><br>
+        <label for="password">Password *</label>
+        <input type="password" id="password" name="password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*:]{6}"title="password should include length of 6,capital,small,numeric and a special characters"><br><br>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>
